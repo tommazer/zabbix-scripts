@@ -50,7 +50,7 @@ while($row = <CONFIG>)
     {
         $logfile = $1;
     }    
-    if( $row =~ /^retain\s+(\S+)/ )
+    if( $row =~ /^(?:retain|interval)\s+(\S+)/ )
     {
         push(@types, $1);
     }    
